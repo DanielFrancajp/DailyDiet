@@ -1,5 +1,5 @@
 import {
-    Container, UserInfo,
+    Container, UserInfo,BorderUserInfo
 
 }
     from "./styles";
@@ -12,10 +12,11 @@ export function Header() {
             <Image
                 source={require('../../../assets/Logo.png')}
             />
-            <Image
-                style={{ width: 45, height: 45 }}
+            <BorderUserInfo>
+            <UserInfo
                 source={require('../../../assets/User.png')}
             />
+            </BorderUserInfo>
         </Container>
     )
 }
