@@ -2,7 +2,7 @@ import { useFonts, Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/
 import { ThemeProvider } from "styled-components";
 import theme from './theme'
 
-import Statistics from "./src/screens/Statistics";
+import DietRecord from "./src/screens/DietRecord";
 import { Loading } from "./src/components/Loading";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       {fontsLoaded ?
-        <Statistics />
+        <DietRecord />
 
         :
         <Loading />
