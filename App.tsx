@@ -1,9 +1,8 @@
 import { useFonts, Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import { ThemeProvider } from "styled-components";
-import { StatusBar } from "react-native";
 import theme from './theme'
 
-import Home from "./src/screens/Home";
+import Statistics from "./src/screens/Statistics";
 import { Loading } from "./src/components/Loading";
 
 export default function App() {
@@ -15,14 +14,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor='transparent'
-        translucent
-      />
       {fontsLoaded ?
-        <Home />
-       
+        <Statistics />
+
         :
         <Loading />
       }
