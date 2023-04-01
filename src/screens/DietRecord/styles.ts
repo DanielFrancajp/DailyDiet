@@ -30,6 +30,14 @@ export const Title = styled.Text`
     font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
     font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_S}px;
 `;
+
+export const TitleBody = styled.Text`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
+    font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_XS}px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+`;
+
 export const ContentTitle = styled.View`
     justify-content: center;
     margin-left: 90px;
@@ -41,6 +49,22 @@ export const ContainerBody = styled.View`
 margin-top: 40px;
 margin-right: 24px;
 margin-left: 24px;
-
 `;
 
+export const ContentTitleBody = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+export const ContentBody = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+`;
+export const ContentLegs = styled.View`
+
+    margin-top: 70px;
+
+
+`;

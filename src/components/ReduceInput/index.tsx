@@ -1,12 +1,13 @@
+import { TextInputProps } from "react-native";
 import { useTheme } from "styled-components";
 import { Container } from "./styles";
-
 
 type Props = {
     title: string;
 }
 
-export default function Input({ title}:Props) {
+
+export default function ReduceInput({ title}: Props) {
 
     const { COLORS } = useTheme();
 

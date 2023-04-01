@@ -9,12 +9,10 @@ export const Container = styled(TextInput)`
    font-size: ${theme.FONT_SIZE.BODY_M}px;
    font-family: ${theme.FONT_FAMILY.REGULAR};
    
+   
    `}
-
-   flex:1;
-   min-height:56px;
-   max-height: 56px;
    border-radius: 6px;
    padding:16px;
+   height: 120px
 `;
 
