@@ -11,7 +11,7 @@ export const Container = styled.View`
 
 export const TextTitle = styled.Text`
 
-    color: ${({ theme }) => theme.COLORS.BRAND_RED_DARK};
+    color: ${({ theme }) => theme.COLORS.BRAND_GREEN_LIGHT};
     font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_M}px;
     font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;
@@ -24,23 +24,17 @@ export const Text = styled.Text`
     margin-top: 10px;
 
 `;
-export const Text1 = styled.Text`
-
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
-    font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_XS}px;
-    font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
-
-`;
-
 export const TextBold = styled.Text`
 
     color: ${({ theme }) => theme.COLORS.GRAY_100};
     font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_XS}px;
     font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
-
-
 `;
 
+export const ContentImage = styled.View`
+margin-top: 40px;
+
+`;
 export const ContentButton = styled.View`
 margin-top: 40px;
 width: 191px;
