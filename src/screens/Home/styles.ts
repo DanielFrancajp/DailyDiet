@@ -16,6 +16,12 @@ export const ContentTitle = styled.View`
     margin-bottom: 12px;
 `;
 
+export const ContenTitle = styled.View`
+    width: 327px;
+    height: 50px;
+    margin-left: 28px;
+`;
+
 export const Dates = styled.Text`
     font-size: ${({ theme }) => theme.FONT_SIZE.TITLE_S}px;
     font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};

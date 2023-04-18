@@ -4,10 +4,11 @@ import {
 
 
 type Props = {
-    title: string
+    title: string;
+    onPress: () => void;
 }
 
-export function Button({ title }: Props) {
+export function Button({ title,onPress }: Props) {
     return (
         <Container>
             <Title>

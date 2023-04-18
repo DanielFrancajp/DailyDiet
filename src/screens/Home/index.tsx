@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useNavigation } from '@react-navigation/native'
 
 import {
     Container,
     ContentTitle,
     Title,
     Dates,
-    ContentDates
+    ContentDates,
+    ContenTitle
 }
     from './styles';
 
@@ -17,7 +18,11 @@ import { Button } from '../../components/Button';
 
 export default function Home() {
 
-    const [group, setGroup] = useState<string[]>(['']);
+    const navigation = useNavigation()
+
+    function handleNewMeal() {
+        navigation.navigate('rightscreen')
+    }
 
     return (
         <Container>
@@ -29,9 +34,14 @@ export default function Home() {
                     Refeições
                 </Title>
             </ContentTitle>
-            <Button
-                title=' + Nova Refeição'
-            />
+
+            <ContenTitle>
+                <Button
+                    title=' + Nova Refeição'
+                    onPress={handleNewMeal}
+
+                />
+            </ContenTitle>
 
             <ContentDates>
                 <Dates>
@@ -39,7 +49,7 @@ export default function Home() {
                 </Dates>
             </ContentDates>
 
-          
+
 
         </Container>
     )
