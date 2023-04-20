@@ -2,7 +2,7 @@ import { useFonts, Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/
 import { ThemeProvider } from "styled-components";
 import theme from './theme'
 
-import  Routes  from "./src/routes";
+import  Routes  from "./src/routes/index";
 import { Loading } from "./src/components/Loading";
 
 export default function App() {

@@ -10,7 +10,7 @@ type Props = {
 
 export function Button({ title,onPress }: Props) {
     return (
-        <Container>
+        <Container onPress={onPress} >
             <Title>
                 {title}
             </Title>

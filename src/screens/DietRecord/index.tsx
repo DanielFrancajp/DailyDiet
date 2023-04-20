@@ -98,6 +98,7 @@ export default function DietRecord() {
 
                 <ContentLegs>
                 <Button
+                onPress={()=>{}}
                 title="Cadastrar refeição"
                 />
                 </ContentLegs>

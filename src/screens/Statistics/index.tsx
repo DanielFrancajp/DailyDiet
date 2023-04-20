@@ -14,12 +14,12 @@ import {
     ContentBoxColors
 } from "./styles";
 
-import { StatusBar } from "react-native";
+import { StatusBar, View } from "react-native";
 
 
 export default function Statistics() {
     return (
-        <Container>
+        <>
             <StatusBar
                 barStyle="light-content"
                 backgroundColor='transparent'
@@ -42,53 +42,52 @@ export default function Statistics() {
                 </ContentTitle>
             </ContainerStatistics>
 
+                <ContentGeneral>
+                    <View style={{alignItems: 'center'}} >
+                    <Title>
+                        Estatísticas gerais
+                    </Title>
 
-
-            <ContentGeneral>
-                <Title>
-                    Estatísticas gerais
-                </Title>
-
-                <BoxGray600>
-                    <TitleResults>
-                        22
-                    </TitleResults>
-                    <SubTitleResults>
-                        melhor sequência de pratos dentro da dieta
-                    </SubTitleResults>
-                </BoxGray600>
-
-                <BoxGray600>
-                    <TitleResults>
-                        109
-                    </TitleResults>
-                    <SubTitleResults>
-                        refeições registradas
-                    </SubTitleResults>
-                </BoxGray600>
-
-                <ContentBoxColors>
-                    <BoxGreenMid>
+                    <BoxGray600>
                         <TitleResults>
-                            99
+                            22
                         </TitleResults>
                         <SubTitleResults>
-                            refeições dentro da dieta
+                            melhor sequência de pratos dentro da dieta
                         </SubTitleResults>
+                    </BoxGray600>
 
-                    </BoxGreenMid>
-
-                    <BoxRedMid>
+                    <BoxGray600>
                         <TitleResults>
-                            10
+                            109
                         </TitleResults>
                         <SubTitleResults>
-                            refeições dentro da dieta
+                            refeições registradas
                         </SubTitleResults>
-                    </BoxRedMid>
-                </ContentBoxColors>
-            </ContentGeneral>
+                    </BoxGray600>
 
-        </Container>
+                    </View>
+                    <ContentBoxColors>
+                        <BoxGreenMid>
+                            <TitleResults>
+                                99
+                            </TitleResults>
+                            <SubTitleResults>
+                                refeições dentro da dieta
+                            </SubTitleResults>
+
+                        </BoxGreenMid>
+                        <BoxRedMid>
+                            <TitleResults>
+                                10
+                            </TitleResults>
+                            <SubTitleResults>
+                                refeições dentro da dieta
+                            </SubTitleResults>
+                        </BoxRedMid>
+                    </ContentBoxColors>
+                </ContentGeneral>
+
+        </>
     )
 }

@@ -3,15 +3,17 @@ import { ArrowLeft } from "phosphor-react-native";
 
 
 export const Container = styled.View`
+flex: 1;
    justify-content: center;
    align-items: center;
+   margin-top: -20px;
+
 `;
 
 export const ContainerStatistics = styled.View`
     width: 100%;
     height: 200px;
     background-color: ${({ theme }) => theme.COLORS.BRAND_GREEN_MID};
-    margin-bottom: 50px;
 `;
 
 export const ButtonIcon = styled.TouchableOpacity`
@@ -39,6 +41,7 @@ export const TitleResults = styled.Text`
 `;
 
 export const SubTitleResults = styled.Text`
+text-align: center;
     font-size: ${({ theme }) => theme.FONT_SIZE.BODY_S}px;
     font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `;
@@ -51,8 +54,13 @@ export const Title = styled.Text`
 
 
 export const ContentGeneral = styled.View`
-border-top-right-radius: 7px ;
-border-top-left-radius: 7px;
+width: 100%;
+flex: 1;
+background-color: #fff;
+padding-top: 20px;
+margin-top: -30px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
 `;
 
 export const BoxGray600 = styled.View`
@@ -63,6 +71,7 @@ export const BoxGray600 = styled.View`
     border-radius: 8px;
     align-items: center;
     justify-content: center;
+    
 `;
 
 export const BoxGreenMid = styled.View`
@@ -87,6 +96,8 @@ export const BoxRedMid = styled.View`
 
 export const ContentBoxColors = styled.View`
     flex-direction: row;
+    margin-right: 30px;
+    margin-left: 30px;
     justify-content: space-between;
 `;
 
