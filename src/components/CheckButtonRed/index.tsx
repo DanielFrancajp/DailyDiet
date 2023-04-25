@@ -12,7 +12,7 @@ type Props = TouchableOpacityProps & {
 }
 
 
-export default function CheckButton({ title, }: Props) {
+export default function CheckButtonRed({ title, }: Props) {
     return (
 
         <Container >

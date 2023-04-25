@@ -18,9 +18,12 @@ import Input from "../../components/Input";
 import WideInput from "../../components/WideInput";
 import ReduceInput from "../../components/ReduceInput";
 import CheckButton from "../../components/CheckButton";
+import CheckButtonRed from "../../components/CheckButtonRed";
 import { Button } from "../../components/Button";
 
 export default function DietRecord() {
+
+  
     return (
         <Container>
 
@@ -41,8 +44,8 @@ export default function DietRecord() {
                     Nome
                 </TitleBody>
 
-                <Input 
-                title="Digite aqui"
+                <Input
+                    title="Digite aqui"
                 />
 
                 <TitleBody>
@@ -50,7 +53,7 @@ export default function DietRecord() {
                 </TitleBody>
 
                 <WideInput
-                title="Digite aqui" 
+                    title="Digite aqui"
                 />
 
 
@@ -70,11 +73,11 @@ export default function DietRecord() {
                 <ContentBody>
 
                     <ReduceInput
-                    title="01/01/2023"
+                        title="01/01/2023"
                     />
                     <View />
                     <ReduceInput
-                    title="20:00"
+                        title="20:00"
                     />
                 </ContentBody>
 
@@ -90,23 +93,23 @@ export default function DietRecord() {
 
                     <View />
 
-                    <CheckButton
+                    <CheckButtonRed
                         title={'Não'}
                     />
 
                 </ContentBody>
 
                 <ContentLegs>
-                <Button
-                onPress={()=>{}}
-                title="Cadastrar refeição"
-                />
+                    <Button
+                        onPress={() => { }}
+                        title="Cadastrar refeição"
+                    />
                 </ContentLegs>
 
             </ContainerBody>
 
 
-            
+
 
 
 

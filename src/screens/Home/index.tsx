@@ -62,7 +62,7 @@ export default function Home() {
       ];
 
     function handleNewMeal() {
-        navigation.navigate('statistics')
+        navigation.navigate('dietrecord')
     }
 
     return (

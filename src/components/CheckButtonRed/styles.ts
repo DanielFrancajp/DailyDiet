@@ -5,9 +5,7 @@ import { Circle } from "phosphor-react-native";
 
 export type CircleTypeProps = ' PRIMARY' | 'SECONDARY';
 
-type Props = {
-    type: CircleTypeProps
-}
+
 
 export const Container = styled(TouchableOpacity)`
     min-height: 56px;
@@ -29,16 +27,10 @@ ${({ theme }) => css`
 `;
 export const Icon = styled(Circle).attrs(({ theme }) => ({
     size: 8,
-    color: theme.COLORS.BRAND_GREEN_LIGHT,
+    color: theme.COLORS.BRAND_RED_DARK,
     weight: "fill",
     
 }))`
-padding-left: 20px;
+padding-left: 15px;
 `;
 
-export const Icon1 = styled(Circle).attrs(({ theme }) => ({
-    size: 8,
-    color: theme.COLORS.BRAND_RED_DARK,
-    weight: "fill",
-}))`
-`;
